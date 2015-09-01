@@ -51,7 +51,7 @@ class SessionDAO:
         if session_id is None:
             return
 
-        self.sessions.delete_one({'_id': session_id})
+        self.sessions.remove_one({'_id': session_id})
 
         return
 
